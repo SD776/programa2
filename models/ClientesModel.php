@@ -11,9 +11,10 @@ class ClientesModel extends Query{
     public function registrar($identidad, $num_ci, $nombre,
     $telefono, $correo, $direccion)
     {
-        $sql = "INSERT INTO clientes (identidad, num_ci, nombre, telefono, correo, direccion) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO clientes (identidad, num_ci, nombre, telefono, correo, direccion,id_sucursal) VALUES (?,?,?,?,?,?,?)";
+        $sucursalCliente = $_SESSION['id_surcursal'];
         $array = array($identidad, $num_ci, $nombre,
-        $telefono, $correo, $direccion);
+        $telefono, $correo, $direccion,$sucursalCliente);
         return $this->insertar($sql, $array);
     }
 

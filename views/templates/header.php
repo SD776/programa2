@@ -39,6 +39,7 @@
 		<div class="sidebar-wrapper" data-simplebar="true">
 			<div class="sidebar-header">
 				<div>
+					<?= var_dump($_SESSION['hola']); ?>
 					<img src="<?php echo BASE_URL; ?>assets/images/logo-empresa.png" class="logo-icon" alt="logo icon">
 				</div>
 				<div>
