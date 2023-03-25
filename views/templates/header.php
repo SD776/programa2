@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/images/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/images/logopng.png">
 	<link href="<?php echo BASE_URL; ?>assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
 	<link href="<?php echo BASE_URL; ?>assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="<?php echo BASE_URL; ?>assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
@@ -135,7 +135,7 @@
 					</a>
 				</li>
 				<?php } ?>
-				<?php  if ($_SESSION['rol'] == 1) {?>
+				<?php  if ($_SESSION['rol'] == 1 or $_SESSION['rol'] == 3) {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'inventarios'; ?>">
 						<div class="parent-icon"><i class="fa-solid fa-truck-ramp-box"></i>

@@ -5,7 +5,7 @@ define('USER', 'root');
 define('PASS', '');
 define('DBNAME', 'sistema');
 define('CHARSET', '');
-define('TITLE', 'IngShop');
+define('TITLE', 'DSA Import');
 define('MONEDA', '$');
 define('HOST_SMTP', 'smtp.gmail.com');
 define('USER_SMTP', 'pcorreo940@gmail.com');
