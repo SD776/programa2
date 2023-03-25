@@ -33,8 +33,12 @@ class Usuarios extends Controller
 
             if ($data[$i]['rol'] == 1) {
                 $data[$i]['rol'] = '<span class="badge bg-success">ADMINISTRADOR</span>';
-            } else {
+            } else if ($data[$i]['rol'] == 2){
                 $data[$i]['rol'] = '<span class="badge bg-info">VENDEDOR</span>';
+            } else if ($data[$i]['rol'] == 3){
+                $data[$i]['rol'] = '<span class="badge bg-info">GERENTE</span>';
+            }else{
+                $data[$i]['rol'] = '<span class="badge bg-info">COBRANZA</span>';
             }
             $data[$i]['acciones'] = '<div>
             <button class="btn btn-danger" type="button" onclick="eliminarUsuario(' . $data[$i]['id'] . ')"><i class="fas fa-times-circle"></i></button>

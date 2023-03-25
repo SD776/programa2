@@ -39,10 +39,10 @@
 		<div class="sidebar-wrapper" data-simplebar="true">
 			<div class="sidebar-header">
 				<div>
-					<img src="<?php echo BASE_URL; ?>assets/images/logo-empresa.png" class="logo-icon" alt="logo icon">
+					<img src="<?php echo BASE_URL; ?>assets/images/logopng.png" class="logo-icon" alt="logo icon">
 				</div>
 				<div>
-					<h4 class="logo-text">IngShop</h4>
+					<h4 class="logo-text">DSA Import</h4>
 				</div>
 				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
 				</div>
@@ -68,17 +68,17 @@
 						</li>
 						<li> <a href="<?php echo BASE_URL . 'admin/datos'; ?>"><i class="bx bx-right-arrow-alt"></i>Configuración</a>
 						</li>
-						<li> <a href="<?php echo BASE_URL . 'admin/logs'; ?>"><i class="bx bx-right-arrow-alt"></i>Accesos</a>
-						</li>
+			
 
 					</ul>
 				</li>
 				<?php } ?>
+				<?php  if ($_SESSION['rol'] == 3) {?>
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="fa-solid fa-clipboard-list"></i>
 						</div>
-						<div class="menu-title">Mantenimiento</div>
+						<div class="menu-title">Gestion de Productos</div>
 					</a>
 					<ul>
 						<li> <a href="<?php echo BASE_URL .	'medidas'; ?>"><i class="bx bx-right-arrow-alt"></i>Medidas</a>
@@ -89,6 +89,8 @@
 						</li>
 					</ul>
 				</li>
+				<?php } ?>
+				<?php  if ($_SESSION['rol'] == 3 or ($_SESSION['rol'] == 2))  {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'clientes'; ?>">
 						<div class="parent-icon"><i class="fa-solid fa-users"></i>
@@ -96,6 +98,7 @@
 						<div class="menu-title">Clientes</div>
 					</a>
 				</li>
+				<?php } ?>
 				<?php  if ($_SESSION['rol'] == 1) {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'proveedor'; ?>">
@@ -105,13 +108,7 @@
 					</a>
 				</li>
 				<?php } ?>
-				<li>
-					<a href="<?php echo BASE_URL . 'cajas'; ?>">
-						<div class="parent-icon"><i class="fa-solid fa-cash-register"></i>
-						</div>
-						<div class="menu-title">Cajas</div>
-					</a>
-				</li>
+				<?php  if ($_SESSION['rol'] == 3) {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'compras'; ?>">
 						<div class="parent-icon"><i class="fa-solid fa-cart-shopping"></i>
@@ -119,6 +116,8 @@
 						<div class="menu-title">Compras</div>
 					</a>
 				</li>
+				<?php } ?>
+				<?php  if ($_SESSION['rol'] == 2) {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'ventas'; ?>">
 						<div class="parent-icon"><i class="fa-solid fa-basket-shopping"></i>
@@ -126,6 +125,8 @@
 						<div class="menu-title">Ventas</div>
 					</a>
 				</li>
+				<?php } ?>
+				<?php  if ($_SESSION['rol'] == 4) {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'creditos'; ?>">
 						<div class="parent-icon"><i class="fa-solid fa-credit-card"></i>
@@ -133,19 +134,13 @@
 						<div class="menu-title">Administrar Créditos</div>
 					</a>
 				</li>
-				<li>
-					<a href="<?php echo BASE_URL . 'apartados'; ?>">
-						<div class="parent-icon"><i class="fa-solid fa-boxes-packing"></i>
-						</div>
-						<div class="menu-title">Apartados</div>
-					</a>
-				</li>
+				<?php } ?>
 				<?php  if ($_SESSION['rol'] == 1) {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'inventarios'; ?>">
 						<div class="parent-icon"><i class="fa-solid fa-truck-ramp-box"></i>
 						</div>
-						<div class="menu-title">Inventario</div>
+						<div class="menu-title">Historial de inventario</div>
 					</a>
 				</li>
 				<?php } ?>
@@ -158,22 +153,7 @@
 					</a>
 				</li>
 				<?php } ?>
-				<li>
-					<a href="<?php echo BASE_URL . 'manual'; ?>">
-						<div class="parent-icon"><i class="fa-solid fa-download"></i>
-						</div>
-						<div class="menu-title">Manual del Sistema</div>
-					</a>
-				</li>
-				<?php  if ($_SESSION['rol'] == 1) {?>
-				<li>
-					<a href="<?php echo BASE_URL . 'informe'; ?>">
-						<div class="parent-icon"><i class="fa-solid fa-file"></i>
-						</div>
-						<div class="menu-title">Reportes PDF</div>
-					</a>
-				</li>				
-				<?php } ?>
+
 			</ul>
 			<!--end navigation-->
 		</div>
