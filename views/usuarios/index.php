@@ -160,7 +160,8 @@ return false;
                                     <option value="" selected>Seleccionar</option>
                                     <option value="3">GERENTE SUCURSAL</option>
                                     <option value="2">VENDEDOR</option>
-                                    <option value="2">COBRANZA</option>
+                                    <option value="3">GERENTE</option>
+                                    <option value="4">COBRANZA</option>
                                 </select>
                             </div>
                             <span id="errorRol" class="text-danger"></span>
