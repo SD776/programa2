@@ -3,7 +3,7 @@ define('BASE_URL', 'http://localhost/programa/');
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('DBNAME', 'sistema');
+define('DBNAME', 'sistema-mod');
 define('CHARSET', '');
 define('TITLE', 'IngShop');
 define('MONEDA', '$');
