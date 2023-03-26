@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         setTimeout(() => {
                             let timerInterval
                             Swal.fire({
-                                title: 'BIENVENIDO A PROGRAM.ING.SHOP',
-                                html: 'Será redireccionado en <b></b> milliseconds.',
+                                title: 'BIENVENIDO A DSA IMPORTS!',
+                                html: 'Será redireccionado en <b></b> millisegundos.',
                                 timer: 2000,
                                 timerProgressBar: true,
                                 didOpen: () => {

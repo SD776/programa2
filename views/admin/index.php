@@ -48,7 +48,7 @@ return false;
 
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title text-center">INGSHOP - RIF J-502226605</h5>
+        <h5 class="card-title text-center">DSA Imports - RIF J-502226605</h5>
         <hr>
         <form class="p-4" id="formulario" autocomplete="off">
             <input type="hidden" id="id" name="id" value="<?php echo $data['empresa']['id']; ?>">
