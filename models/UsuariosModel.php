@@ -9,12 +9,12 @@ class UsuariosModel extends Query{
         return $this->selectAll($sql);
     }
     public function registrar($ci, $nombres, $apellidos, $correo, 
-    $telefono, $direccion, $contraseña, $rol)
+    $telefono, $direccion, $contraseña, $rol,$sucursal)
     {
         $sql = "INSERT INTO usuarios (ci, nombre, apellido, correo, telefono, 
-        direccion, clave, rol) VALUES (?,?,?,?,?,?,?,?)";
+        direccion, clave, rol,id_sucursal) VALUES (?,?,?,?,?,?,?,?,?)";
         $array = array($ci, $nombres, $apellidos, $correo, 
-        $telefono, $direccion, $contraseña, $rol);
+        $telefono, $direccion, $contraseña, $rol,$sucursal);
         return $this->insertar($sql, $array);
     }
     public function Validar($campo, $valor, $accion, $id)

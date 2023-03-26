@@ -1,3 +1,8 @@
+<?php 
+	$nombreSesion = ''; 
+	if(!$_SESSION['sucursal']==0)
+		$nombreSesion = 'Sucursal: '; 
+?>
 <!doctype html>
 <html lang="en">
 
@@ -39,11 +44,10 @@
 		<div class="sidebar-wrapper" data-simplebar="true">
 			<div class="sidebar-header">
 				<div>
-					<?= var_dump($_SESSION['hola']); ?>
 					<img src="<?php echo BASE_URL; ?>assets/images/logo-empresa.png" class="logo-icon" alt="logo icon">
 				</div>
 				<div>
-					<h4 class="logo-text">IngShop</h4>
+					<h4 class="logo-text"><?= $nombreSesion; ?> <?= $_SESSION['nombre_sucursal']; ?></h4>
 				</div>
 				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
 				</div>
