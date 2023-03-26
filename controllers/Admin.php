@@ -42,7 +42,7 @@ class Admin extends Controller
             header('Location:' . BASE_URL . 'admin/permisos');
             exit;
         }
-        $data['title'] = 'IngShop';
+        $data['title'] = 'DSA Import';
         $data['script'] = 'admin.js';
         $data['empresa'] = $this->model->getDatos();
         $this->views->getView('admin', 'index', $data);
@@ -289,7 +289,7 @@ class Admin extends Controller
     public function reporteExcel()
     {        
         $spreadsheet = new Spreadsheet();
-        $spreadsheet->getProperties()->setCreator("IngShop");
+        $spreadsheet->getProperties()->setCreator("DSA Import");
         $spreadsheet->getProperties()->setTitle("Reporte Excel");
 
         $spreadsheet->setActiveSheetIndex(0);

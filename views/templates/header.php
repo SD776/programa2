@@ -54,6 +54,7 @@
 			</div>
 			<!--navigation-->
 			<ul class="metismenu" id="menu">
+			<?php  if ($_SESSION['rol'] == 1) {?>
 				<li>
 					<a href="<?php echo BASE_URL . 'admin'; ?>">
 						<div class="parent-icon"><i class="fa-solid fa-house-user"></i>
@@ -61,6 +62,7 @@
 						<div class="menu-title">Tablero</div>
 					</a>
 				</li>
+				<?php } ?>
 				<?php  if ($_SESSION['rol'] == 1) {?>
 				<li>
 					<a href="javascript:;" class="has-arrow">
