@@ -23,7 +23,10 @@
                                 <p class="text-muted font-size-sm"> <?php echo $data['usuario']['fecha']; ?></p>
                                 <hr>
                                 <h5 class="text-center">Rol</h5>
-                                <p class="text-muted font-size-sm"> <?php echo ($data['usuario']['rol'] == 1) ? 'ADMINISTRADOR' : 'VENDEDOR'; ?></p>
+                                <p class="text-muted font-size-sm"> <?php if ($data['usuario']['rol'] == 1){echo  'ADMINISTRADOR';}
+                                                                            else if ($data['usuario']['rol'] == 2){echo  'VENDEDOR';}
+                                                                            else if ($data['usuario']['rol'] == 3){echo  'GERENTE';}
+                                                                            else echo 'COBRANZA';?></p>
                             </div>
                         </div>
                     </div>

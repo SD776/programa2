@@ -57,7 +57,7 @@ return false;
                 <hr>
                 <div class="btn-group btn-group-toggle mb-2" data-toggle="buttons">
                     <label class="btn btn-primary">
-                        <input type="radio" id="barcode" checked name="buscarProducto"><i class="fas fa-barcode"></i> Barcode
+                        <input type="radio" id="barcode" checked name="buscarProducto"><i class="fas fa-barcode"></i> Código
                     </label>
                     <label class="btn btn-info">
                         <input type="radio" id="nombre" name="buscarProducto"><i class="fas fa-list"></i> Nombre
