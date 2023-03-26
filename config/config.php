@@ -1,5 +1,5 @@
 <?php
-define('BASE_URL', 'http://localhost/dsaimports/');
+define('BASE_URL', 'http://localhost/programa/');
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
