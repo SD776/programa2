@@ -1,5 +1,5 @@
 <?php
-define('BASE_URL', 'http://localhost/programa/');
+define('BASE_URL', 'http://localhost/programa2/');
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
